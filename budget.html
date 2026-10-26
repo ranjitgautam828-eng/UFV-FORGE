@@ -14,7 +14,9 @@
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
   <link rel="stylesheet" href="assets/styles.css" />
-</head>
+<style>
+.allocation summary{list-style:none;cursor:pointer;padding:4px 0 8px}.allocation summary::-webkit-details-marker{display:none}.allocation .budget-label{margin-bottom:12px}.allocation .bar-track{display:block}.allocation .allocation-hint{display:block;margin-top:8px;color:var(--green-2);font-size:.82rem;font-weight:700}.allocation[open] .allocation-hint{display:none}.allocation>p{padding:10px 14px;margin-top:4px;border-left:3px solid var(--green-2);background:#fff;border-radius:0 8px 8px 0}.allocation:focus-within summary{outline:2px solid var(--green-2);outline-offset:4px}
+</style></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-nav">
@@ -25,114 +27,17 @@
     </div>
   </header>
 
-  <main id="main">
-    <section class="section" style="padding-top:140px;">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">The Budget</span>
-          <h1>Every dollar accounted for.</h1>
-          <p class="lead">Transparent allocation. Fixed-price contracts. Two kill-point cost reviews.</p>
-        </div>
-
-        <div class="budget-layout">
-          <div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Hub facility (labs, studios, server room)</span><span>$26M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="26"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Advanced labs &amp; infrastructure</span><span>$20M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="20"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Connection Fund (fellowships, chairs, matching)</span><span>$22M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="22"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Sustainability endowment</span><span>$20M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="20"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Platform build &amp; launch team</span><span>$5M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="5"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Project management office</span><span>$2M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="2"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Contingency</span><span>$5M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="5"></span></div>
-            </div>
-          </div>
-          
-          <aside class="budget-total reveal">
-            <h4>$100M</h4>
-            <p style="color:var(--gray); font-size:1.1rem;">Total investment</p>
-            <hr style="border:none; border-top:1px solid var(--line); margin:24px 0;">
-            <p style="font-size:0.95rem;">5% contingency held by the steering committee. Monthly earned-value review. Fixed-price contracts where possible.</p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVENUE MODEL -->
-    <section class="section section-alt" id="revenue">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="eyebrow">Self-Sustaining Model</span>
-          <h2>Annual revenue targets at full operation.</h2>
-          <p class="lead">The base case targets 80% annualized operating-cost coverage at opening and 100% by 2032. The conservative scenario targets full coverage by 2034.</p>
-        </div>
-        
-        <div class="budget-layout">
-           <div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Industry memberships (tiered)</span><span>$1.5M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="25"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Sponsored projects &amp; student consulting</span><span>$1.2M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="20"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Grants &amp; research contracts</span><span>$1.0M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="17"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Managed hosting for nonprofits</span><span>$0.8M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="13"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Endowment income (about 4%)</span><span>$0.8M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="13"></span></div>
-            </div>
-            <div class="budget-row reveal">
-              <div class="budget-label"><span>Training, bootcamps, certifications</span><span>$0.7M</span></div>
-              <div class="bar-track" aria-hidden="true"><span class="bar-fill" data-val="12"></span></div>
-            </div>
-          </div>
-          
-          <aside class="budget-total reveal" style="background: var(--ufv-green-tint);">
-            <h4>$6.0M</h4>
-            <p style="color:var(--ufv-green-dark); font-size:1.1rem;">Annual revenue target</p>
-            <hr style="border:none; border-top:1px solid rgba(11, 61, 46, 0.2); margin:24px 0;">
-            <p style="font-size:0.95rem; color:var(--ufv-green-dark);">Operating cost target is roughly $5.5M/year (staff $3.0M, power and hardware $1.5M, security $0.5M, student ops $0.5M).</p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container" style="text-align:center;">
-        <div class="reveal">
-          <h2>See the plan.</h2>
-          <p class="lead" style="margin-bottom:32px;">Realistic timeline to September 1, 2030.</p>
-          <a href="timeline.html" class="btn btn-primary">Timeline</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  <main id="main"><section class="section" style="padding-top:140px"><div class="container"><div class="section-header reveal"><span class="eyebrow">Investment design</span><h1>Fund the capability—not just the building.</h1><p class="lead">The proposed $100 million is split across facilities, technical capacity, people and long-term continuity. Select an allocation to see what it enables. The figures are proposed planning amounts.</p></div>
+<div class="budget-layout"><div>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Hub facility</span><span>$26M · 26%</span></span><span class="bar-track"><span class="bar-fill" data-val="26"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Building, laboratories, studios and server room.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Connection Fund</span><span>$22M · 22%</span></span><span class="bar-track"><span class="bar-fill" data-val="22"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Student fellowships, faculty chairs and industry matching.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Advanced labs &amp; infrastructure</span><span>$20M · 20%</span></span><span class="bar-track"><span class="bar-fill" data-val="20"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Compute, networking, cyber range and IoT equipment.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Sustainability endowment</span><span>$20M · 20%</span></span><span class="bar-track"><span class="bar-fill" data-val="20"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Long-term income intended to help support operations.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Platform &amp; launch team</span><span>$5M · 5%</span></span><span class="bar-track"><span class="bar-fill" data-val="5"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Student platform development and initial launch capacity.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Project management office</span><span>$2M · 2%</span></span><span class="bar-track"><span class="bar-fill" data-val="2"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Schedule, reporting, risk and change control.</p></details>
+<details class="budget-row reveal allocation"><summary><span class="budget-label"><span>Contingency</span><span>$5M · 5%</span></span><span class="bar-track"><span class="bar-fill" data-val="5"></span></span><span class="allocation-hint">View what this funds +</span></summary><p>Reserved for project cost and schedule risks—not operating deficits.</p></details>
+</div><aside class="budget-total reveal"><h4>$100M</h4><p style="color:var(--gray);font-size:1.1rem">Proposed one-time investment</p><hr style="border:none;border-top:1px solid var(--line);margin:24px 0"><p>Largest single allocation: the facility. One-fifth is preserved as an endowment, while 22% is dedicated to people and partnerships.</p></aside></div></div></section>
+<section class="section section-alt"><div class="container"><div class="section-header reveal"><span class="eyebrow">After opening</span><h2>The operating model has to stand on its own.</h2><p class="lead">The plan estimates $5.5M in annual operating costs and targets $6M in annual revenue at full operation.</p></div><div class="feature-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px"><article class="feature-card reveal"><span class="eyebrow">Cost base</span><h3>$5.5M / year</h3><p>Staffing, power and hardware, security, and student operations.</p></article><article class="feature-card reveal"><span class="eyebrow">Revenue target</span><h3>$6.0M / year</h3><p>Memberships, sponsored projects, research, hosting, endowment income and training.</p></article><article class="feature-card reveal"><span class="eyebrow">Ramp-up protection</span><h3>Up to $7M</h3><p>A written UFV bridge commitment is a condition before the first formal construction gate.</p></article></div><div class="timeline-note"><strong>Be clear about the risk.</strong><p>These are planning estimates, not guaranteed income. The conservative scenario targets full operating-cost coverage by 2034, with a forecast cumulative ramp-up shortfall of $6.6M.</p></div><a class="btn btn-secondary" href="why.html">See the decision conditions →</a></div></section></main>
 
   <footer class="site-footer" id="site-footer">
     <div class="container">
@@ -140,7 +45,7 @@
         <div><a class="brand" href="index.html" style="margin-bottom:16px"><img src="assets/logo.svg" alt="" width="26" height="26" /> UFV FORGE</a>
           <p style="max-width:340px">A student proposal for the $100M Federal Allocation Project. CIS-385, University of the Fraser Valley. Figures are proposed targets, not commitments.</p><a href="assets/UFV-Forge-Full-Report.pdf" target="_blank" rel="noopener" class="footer-report">Full project report (PDF) ↗</a></div>
         <div><h4>The Case</h4><a href="vision.html">Vision</a><a href="hub.html">The Hub</a><a href="budget.html">Budget</a><a href="timeline.html">Timeline</a></div>
-        <div><h4>The Decision</h4><a href="delivery.html">Delivery Plan</a><a href="impact.html">Impact</a><a href="why.html">Questions &amp; References</a></div>
+        <div><h4>Project</h4><a href="delivery.html">Delivery Plan</a><a href="impact.html">Impact</a><a href="why.html">The Decision</a></div>
       </div>
       <div class="footer-bottom"><span>© 2026 UFV FORGE · Abiola Azeez, Ranjit Gautam, Pavneet Gill, Gary Rai</span><span>Press P to present</span></div>
     </div>
